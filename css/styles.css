@@ -1,0 +1,285 @@
+/* General styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+/* Header styles */
+
+header {
+    background-color: #6b4e71;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Hero styles */
+
+.hero {
+    background-color: #c2b2b4;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+/* Portfolio styles */
+
+.portfolio {
+    padding: 80px 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Sobre mí styles */
+
+
+/* Sobre mí styles */
+
+.sobre-mi {
+    padding: 80px 0;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centra el contenedor */
+    padding: 0 15px;
+    /* Espaciado horizontal */
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    text-align: center;
+}
+
+.about-me p {
+    max-width: 600px;
+    margin-bottom: 20px;
+    /* Espacio entre párrafos */
+}
+
+.button-cv {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* Elimina subrayado */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    /* Asegura que el botón no ocupe toda la línea */
+    margin-top: 20px;
+    /* Espacio entre el último párrafo y el botón */
+}
+
+.button-cv:hover {
+    background-color: #555;
+}
+
+
+/* Contacto styles */
+
+.contacto {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto form {
+    flex-direction: column;
+    align-items: center;
+    width: 600;
+    max-width: 600px;
+    background: transparent;
+    border: none;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+}
+
+.contacto textarea {
+    resize: vertical;
+    /* Permite el redimensionamiento vertical solo */
+}
+
+.contacto button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #555;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.siganos-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siganos-section {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    .hero-content {
+        flex-direction: column;
+    }
+    .hero-img {
+        width: 150px;
+        height: 150px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Button styles */
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
