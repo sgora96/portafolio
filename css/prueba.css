@@ -55,29 +55,13 @@ nav a {
 }
 
 .hero-content {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.content-row {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.content-box {
-    width: 48%;
-}
-
-h2 {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-p {
-    text-align: justify;
-}
-
-img {
+.hero-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -91,34 +75,19 @@ img {
     padding: 80px 0;
 }
 
-
-/* Portfolio styles */
-
-
-/* Portfolio styles */
-
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* Distribuye los proyectos en columnas dinámicamente */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-    /* Espacio entre los proyectos */
-    justify-items: center;
-    /* Centra los proyectos en cada columna */
-    padding: 0 20px;
 }
 
 .project {
     text-align: center;
-    max-width: 400px;
-    /* Limita el ancho del proyecto */
 }
 
 .project img {
     width: 100%;
-    /* Ajusta el tamaño de las imágenes al 100% del contenedor */
-    height: 150px;
-    /* Ajusta la altura de las imágenes */
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
