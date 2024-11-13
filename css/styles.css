@@ -314,3 +314,26 @@ footer {
 .button:hover {
     background-color: #555;
 }
+
+.videos {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.video-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-box {
+    max-width: 560px;
+    text-align: center;
+}
+
+.video-box h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
